@@ -81,8 +81,8 @@
   \renewcommand{\setminus}{\smallsetminus}
   \newcommand{\kloos}{\textnormal{K}} % Kloosterman sum
   \newcommand{\pr}{\mathrm{pr}} % projection map
-  \renewcommand{\eR}{\textnormal{R}}
-  \renewcommand{\eL}{\textnormal{L}}
+  \renewcommand{\eR}{\mathsf{R}}
+  \renewcommand{\eL}{\mathsf{L}}
 
 
 % theorem types
@@ -111,5 +111,5 @@
 
 %\renewcommand{\bullet}{\text{\,\begin{picture}(-1,1)(-1,-2)\circle*{2}\end{picture}\ }}
 \let\oldbullet\bullet
-\renewcommand{\bullet}{\textnormal{\tiny$\oldbullet$}}
+\renewcommand{\bullet}{{\vcenter{\hbox{\tiny$\oldbullet$}}}}
 
