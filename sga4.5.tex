@@ -1,18 +1,58 @@
 \documentclass[oneside]{book} % add option draft to highlight overful hbox
 
 
+\usepackage[T1]{fontenc}
+\usepackage{calligra}
+\usepackage[utf8]{inputenc} % allows French characters
+\usepackage[all]{xy}        % commutative diagrams
+\usepackage[french]{babel}
+
+
+\usepackage{
+  amsmath,
+  amssymb,
+  amsthm,
+  bm,        % to get bold symbols to work with stmaryrd
+  bookmark, % replaces hyperref
+  enumerate, % allows \begin{enumerate}[\indent a)]
+  extarrows, % allows \xlongrightarrow 
+  lmodern,
+  mathrsfs,  % allows \mathscr
+  stmaryrd   % allows \llbracket, i.e. [[t]]
+}
+\usepackage[kerning=true]{microtype} % improves general appearance
+\usepackage[stable]{footmisc}
+\usepackage[
+  hyperref = true,      % links to online documents
+  backend  = bibtex,    % use bibtex instead of biber
+  sorting  = nyt,       % sort by (name, year, title)
+  style    = alphabetic % citations look like [Har77]
+]{biblatex}
+\addbibresource{sga-sources.bib}
+
 
 \ifdefined\sgaoption 
   \ifnum\sgaoption=1 % tablet version
     \usepackage[paperwidth=6.125in,paperheight=9.25in,text={5.5in,8in},centering]{geometry}
+    \hypersetup{
+      colorlinks = true,
+      linkcolor  = blue,
+      urlcolor   = cyan
+    }
   \else % tree saving version
     \usepackage[margin=1in,centering]{geometry}
   \fi
 \else % normal version
   \usepackage[text={5.5in,8in},centering]{geometry}
+  \hypersetup{
+    colorlinks = true,
+    linkcolor  = blue,
+    urlcolor   = cyan
+  }
 \fi
 
 \usepackage{sga-style}
+
 
 \renewcommand*\thesection{\arabic{section}}
 \renewcommand{\theequation}{\arabic{equation}}
@@ -53,8 +93,7 @@ avec la collaboration de J.F. Boutot, \\ A. Grothendieck, L. Illusie et J.L. Ver
 \include{sga4.5-8}
 \include{sga4.5-erratum}
 
-\bibliographystyle{alpha}
-\bibliography{sga-sources}
+\printbibliography
 
 
 
