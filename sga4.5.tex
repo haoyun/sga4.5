@@ -14,24 +14,32 @@
   amsthm,
   bm,        % to get bold symbols to work with stmaryrd
   bookmark, % replaces hyperref
+  csquotes,
   enumerate, % allows \begin{enumerate}[\indent a)]
   extarrows, % allows \xlongrightarrow 
   lmodern,
   mathrsfs,  % allows \mathscr
-  stmaryrd   % allows \llbracket, i.e. [[t]]
+  stmaryrd,  % allows \llbracket, i.e. [[t]]
+  xfrac      % small fractions
 }
 \usepackage[kerning=true]{microtype} % improves general appearance
 \usepackage[stable]{footmisc}
 \usepackage[
-  hyperref = true,      % links to online documents
-  backend  = bibtex,    % use bibtex instead of biber
-  sorting  = nyt,       % sort by (name, year, title)
-  style    = alphabetic % citations look like [Har77]
+  hyperref    = true,      % links to online documents
+  backend     = bibtex,    % use bibtex instead of biber
+  bibencoding = ascii,     % the .bib file is ASCII
+  sorting     = nyt,       % sort by (name, year, title)
+  style       = alphabetic % citations look like [Har77]
 ]{biblatex}
 \DeclareFieldFormat{pages}{#1} % removes [SOURCE, p. ?]
 \addbibresource{sga-sources.bib}
 
-\usepackage[paperwidth=6.125in,paperheight=9.25in,text={5.5in,8in},centering]{geometry}
+\usepackage[
+  paperheight = 9in,
+  paperwidth  = 6in,
+  textheight  = 7.5in,
+  textwidth   = 5in,
+]{geometry}
 \hypersetup{
   colorlinks = true,
   linkcolor  = blue,
@@ -52,9 +60,9 @@
 
 \title{Séminaire de Géométrie Algébrique du Bois-Marie \\ \vspace{20pt}
 Cohomologie Étale \\ \vspace{20pt}
-(SGA $4\frac 1 2$)}
-\author{par P. Deligne \vspace{10pt}\\ 
-avec la collaboration de J.F. Boutot, \\ A. Grothendieck, L. Illusie et J.L. Verdier}
+(SGA $4\,\sfrac{1}{2}$)}
+\author{par P.~Deligne \vspace{10pt}\\ 
+avec la collaboration de J.~F.~Boutot, \\ A.~Grothendieck, L.~Illusie et J.~L.~Verdier}
 \date{1977}
 
 \begin{document}
