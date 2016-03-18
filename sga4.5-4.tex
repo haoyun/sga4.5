@@ -79,10 +79,10 @@ lecteur est invité à ne consulter qu'au fur et à mesure des besoins.
 Soit $\sF$ un faisceau abélien sur un site $X$. On sait que $\h^1(X,\sF)$ 
 classifie les $\sF$-torseurs sur $X$. Nous normaliserons ($=$choisirons le 
 signe) de l'isomorphisme $($ensemble des classes d'isomorphisme de 
-$F$-torseurs$)\to \h^1(X,\sF)$ de telle sorte que pour toute suite exacte 
+$\sF$-torseurs$)\to \h^1(X,\sF)$ de telle sorte que pour toute suite exacte 
 $0\to \sF\xrightarrow\alpha\sG\xrightarrow\beta\sH\to 0$ et tout 
 $h\in\h^0(X,\sH)$, le $\sF$-torseur $\beta^{-1}(h)\subset \sG$, sur lequel 
-$F$ agit par $(f,x)\mapsto \alpha(f)+x$, soit de classe $\partial h$. 
+$\sF$ agit par $(f,x)\mapsto \alpha(f)+x$, soit de classe $\partial h$. 
 
 
 
@@ -507,7 +507,7 @@ $\cl(D)$ de $D$, dans $\h_D^1(X,\dG_m)$, est la classe du
 $\dG_m$-torseur trivialisé sur $X\setminus D$ correspondant 
 (\ref{IV:1-1-6} et \ref{IV:1-1-4}). 
 
-Soit $\partial:\h^i(X\setminus D,\dG_m)\to \h_D^i(X,\dG_m)$ le morphisme 
+Soit $\partial:\h^i(X\setminus D,\dG_m)\to \h_D^{i+1}(X,\dG_m)$ le morphisme 
 \ref{IV:1-1-4}. Si $D$ admet une équation globale $f$, la multiplication par 
 $f$ est un isomorphisme de $\sO(D)$, trivialisé par $1$ sur $X\setminus D$, 
 avec $\sO$, trivialisé par $f$ sur $X\setminus D$. D'après \ref{IV:1-1-4}, 
@@ -563,13 +563,13 @@ $n$-ièmes de $f$.
 
 \begin{proposition}\label{IV:2-1-4}
 Soit $i$ l'inclusion de $D$ dans $X$. Si $D$ et $X$ sont réguliers, les 
-faisceaux de cohomologie à support $\eR^p i^! \dmu_n$ sont nuls pour $p=0,2$, 
+faisceaux de cohomologie à support $\eR^p i^! \dmu_n$ sont nuls pour $p=0,1$, 
 et $\eR^2 i^!\dmu_n = \underline{\dZ/n}$, engendré par 
 $\cl_n(D)$. 
 \end{proposition}
 
 Il suffit de prouver que, pour $X$ strictement locale et $D$ défini par un 
-paramètre régulier, on a $\h_D^p(X,d\mu_n) = 0$ pour $p=0,1$ et 
+paramètre régulier, on a $\h_D^p(X,\dmu_n) = 0$ pour $p=0,1$ et 
 $\h^2(X,\dmu_n) = \dZ/n$ engendré par $\cl(D)$. Notant par 
 $\sim$ la cohomologie réduite, on a 
 $\widetilde\h^{p-1}(X\setminus D,\dmu_n)\iso \h_D^p(X,\dmu_n)$. L'assertion 
